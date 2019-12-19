@@ -14,9 +14,7 @@ This project is an implementation of RK4 in base Python, but the library [Matplo
 
 ### Monotonic solution with small step-size
 
-$$
-y'(t) = \sqrt{t} - \frac{y}{t} \quad y(1)=0 \quad \Delta t = 0.001
-$$
+![](https://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B300%7D%20%5Chuge%20y%27%28t%29%20%3D%20%5Csqrt%7Bt%7D%20-%20%5Cfrac%7By%7D%7Bt%7D%20%5Cquad%20y%281%29%3D0%20%5Cquad%20%5CDelta%20t%20%3D%200.001)
 
 ![Monotonic solution with small step-size](https://i.imgur.com/fOSNtCp.png)
 
@@ -26,9 +24,7 @@ As we can see, RK4 does seem to be implemented correctly here. This differential
 
 ### Monotonic solution with large step-size
 
-$$
-y'(t) = \sqrt{t} - \frac{y}{t} \quad y(1)=0 \quad \Delta t = 0.1
-$$
+![](https://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B300%7D%20%5Chuge%20y%27%28t%29%20%3D%20%5Csqrt%7Bt%7D%20-%20%5Cfrac%7By%7D%7Bt%7D%20%5Cquad%20y%281%29%3D0%20%5Cquad%20%5CDelta%20t%20%3D%200.1)
 
 ![Monotonic solution with large step-size](https://i.imgur.com/FLQynSs.png)
 
@@ -38,9 +34,7 @@ Even with relatively large step-sizes, RK4 is fairly accurate, and only begins t
 
 ### Non-monotonic solution with small step-size
 
-$$
-y'(t) = \exp(-t) + \frac{1}{2} \cos(5t) - 2 \sin(2t) \quad y(0)=1 \quad \Delta t = 0.001
-$$
+![](https://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B300%7D%20%5Clarge%20y%27%28t%29%20%3D%20%5Cexp%28-t%29%20&plus;%20%5Cfrac%7B1%7D%7B2%7D%20%5Ccos%285t%29%20-%202%20%5Csin%282t%29%20%5Cquad%20y%280%29%3D1%20%5Cquad%20%5CDelta%20t%20%3D%200.001)
 
 ![Non-monotonic solution with small step-size](https://i.imgur.com/N4FX4Wx.png)
 
@@ -50,9 +44,7 @@ With near-periodic functions, we can see that RK4 has no issues with small step-
 
 ### Non-monotonic solution with large step-size
 
-$$
-y'(t) = \exp(-t) + \frac{1}{2} \cos(5t) - 2 \sin(2t) \quad y(0)=1 \quad \Delta t = 0.1
-$$
+![](https://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B300%7D%20%5Clarge%20y%27%28t%29%20%3D%20%5Cexp%28-t%29%20&plus;%20%5Cfrac%7B1%7D%7B2%7D%20%5Ccos%285t%29%20-%202%20%5Csin%282t%29%20%5Cquad%20y%280%29%3D1%20%5Cquad%20%5CDelta%20t%20%3D%200.1)
 
 ![Non-monotonic solution with large step-size](https://i.imgur.com/rSeYHty.png)
 
