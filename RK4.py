@@ -48,5 +48,8 @@ if __name__ == "__main__":
         states[1].append(y_next)
 
     # Plots y over t
-    plt.plot(states[0], states[1], 'k')
+    plt.xlabel("$t$")
+    plt.ylabel("$y$")
+    plt.plot(states[0], states[1], 'k', label="$y(t)$")
+    plt.legend(loc="best")
     plt.show()
